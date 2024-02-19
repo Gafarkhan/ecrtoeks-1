@@ -10,7 +10,7 @@ pipeline {
         
         stage('acr login') {
             steps {
-                sh 'az acr login --name myacr2022.azurecr.io'
+                sh 'az acr login --name myacr2022.azurecr.io --region uk-south | docker login --username gafar22 --password-9398333455@Gk.uk-south'
             }
         }
         
